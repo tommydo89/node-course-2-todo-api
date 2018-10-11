@@ -33,6 +33,8 @@ var UserSchema = new mongoose.Schema({
 	}]
 });
 
+var User = mongoose.model('User', UserSchema);
+
 UserSchema.methods.toJSON = function () {
 	var user = this;
 	var userObject = user.toObject();
@@ -51,7 +53,7 @@ UserSchema.methods.generateAuthToken = function () {
 	});
 };
 
-var User = mongoose.model('User', UserSchema);
+
 
 module.exports = {
 	User
