@@ -6,6 +6,7 @@ const jwt = require('jsonwebtoken');
 
 const userOneId = new ObjectID();
 const userTwoId = new ObjectID();
+
 const users = [{
 	_id: userOneId,
 	email: 'tommy.td89@gmail.com',
@@ -50,3 +51,4 @@ module.exports = {
 	users,
 	populateUsers
 };
+
